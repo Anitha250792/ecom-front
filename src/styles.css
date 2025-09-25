@@ -1,0 +1,126 @@
+/* App container - full viewport */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;/* App container - full viewport */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height */
+  width: 100%;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main content fills remaining space */
+.main-content {
+  flex: 1; /* Takes remaining vertical space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* start from top */
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer stays at bottom */
+.footer {
+  width: 100%;
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+/* Product page / cards wrapper */
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.product-card {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+  align-items: flex-start;
+  min-height: calc(100vh - 120px);
+}
+
+.footer {
+  width: 100%;
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+  font-weight: bold;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+/* Product card wrapper */
+.product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 20px 10px;
+  }
+
+  .product-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
